@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# IDE / tooling
+.idea/
+.vscode/
+# Generated .mat views and experiment output. The raw corpora and the example
+# CSV under data/ are tracked so that every view can be rebuilt from scratch.
+datasets/
+results/
