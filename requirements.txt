@@ -1,0 +1,25 @@
+# BGLR: Learning Manifold-Consistent Anchor Bases for Multi-View Short Text Clustering
+#
+# Python >= 3.8
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# GPU acceleration is optional. Without CUDA the pipeline runs on CPU
+# (use `--device cpu`). To enable GPU, install the CUDA build of PyTorch
+# that matches your driver *before* running the command above, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+
+# ---- Core: multi-view clustering (run_clustering.py --mode cluster) ----
+numpy>=1.21
+scipy>=1.7
+torch>=1.9
+scikit-learn>=1.0
+
+# ---- Feature extraction: CSV -> .mat views (--mode preprocess) ----
+pandas>=1.3
+sentence-transformers>=2.2
+
+# ---- Synonym-replacement data augmentation (Generate_Synonym.py) ----
+openai>=1.0
+tqdm>=4.62
